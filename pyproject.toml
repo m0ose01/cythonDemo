@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cythontest"
+version = "0.1.0"
+description = ""
+authors = ["Seamus <m0ose01@proton.me>"]
+readme = "README.md"
+packages = [{include = "cythontest", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
