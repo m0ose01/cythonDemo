@@ -1,4 +1,4 @@
-from cythontest.shopping_list import ShoppingList 
+from cythondemo.shopping_list import ShoppingList 
 
 def test_shopping_list():
     list = ShoppingList()

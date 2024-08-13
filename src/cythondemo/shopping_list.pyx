@@ -1,4 +1,4 @@
-from cythontest.c_lib cimport items
+from .c_lib cimport items
 
 class ShoppingList():
     def __init__(self):
