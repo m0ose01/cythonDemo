@@ -3,3 +3,4 @@ build/
 src/**/*.c
 *.so
 __pycache__/
+setup.py
