@@ -10,10 +10,3 @@ class ShoppingList():
 
     def __str__(self):
         print(f"Apples: {self.apples}, Bananas: {self.bananas}, Eggs: {self.eggs}, Milk Cartons: {self.milk_cartons}")
-
-# def print_list():
-#     list = items.generate_shopping_list()
-#     print(list.apples)
-#     print(list.bananas)
-#     print(list.eggs)
-#     print(list.milk_cartons)
