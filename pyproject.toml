@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3.2"]
+dev = ["pytest>=8.3.2", "pip-tools>=2.0.1"]
 
 [build-system]
 requires = ["scikit-build-core>=0.10.3", "cython>=3.0.11"]
