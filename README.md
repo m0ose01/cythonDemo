@@ -1,6 +1,6 @@
 # Simple Cython Project
 
-A very simple example of using Poetry with Cython.
+A very simple example of using scikit-build-core with Cython.
 
 A simple example of wrapping an existing C library is also shown.
 
