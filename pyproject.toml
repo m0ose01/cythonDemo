@@ -1,25 +1,14 @@
-[tool.poetry]
+[project]
 name = "cythondemo"
 version = "0.1.0"
 description = ""
 authors = ["Seamus <m0ose01@proton.me>"]
 readme = "README.md"
-packages = [{include = "cythondemo", from = "src"}]
+requires-python = ">=3.10"
 
-[tool.poetry.dependencies]
-python = "^3.10"
-
-[tool.poetry.group.dev]
-optional = true
-
-[tool.poetry.group.dev.dependencies]
-cython = "^3.0.11"
-pytest = "^8.3.2"
+[project.optional-dependencies]
+dev = ["pytest>=8.3.2"]
 
 [build-system]
-requires = ["poetry-core", "setuptools>=72.1.0", "cython>=3.0.11"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.build]
-generate-setup-file = true
-script = "build.py"
+requires = ["scikit-build-core>=0.10.3", "cython>=3.0.11"]
+build-backend = "scikit_build_core.build"
