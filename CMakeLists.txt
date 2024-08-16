@@ -29,6 +29,7 @@ add_custom_command(
 python_add_library(addone MODULE addone.c WITH_SOABI)
 python_add_library(shopping_list MODULE shopping_list.c WITH_SOABI)
 target_link_libraries(shopping_list PUBLIC items)
+set_property(TARGET items PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_include_directories(shopping_list PUBLIC "${C_LIB_PATH}")
 
 install(TARGETS addone DESTINATION ${SKBUILD_PROJECT_NAME})
