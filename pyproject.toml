@@ -14,3 +14,6 @@ dev = ["pytest>=8.3.2", "pip-tools>=2.0.1"]
 [build-system]
 requires = ["scikit-build-core>=0.10.3", "cython>=3.0.11"]
 build-backend = "scikit_build_core.build"
+
+[tool.cibuildwheel]
+build-frontend = "build"
